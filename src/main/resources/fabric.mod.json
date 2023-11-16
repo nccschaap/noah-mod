@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "noah-mod",
+	"version": "${version}",
+	"name": "noah-mod",
+	"description": "This is Noah's first MC Mod",
+	"authors": [
+		"nccschaap"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/noah-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "cc.schaap.NoahMod"
+		],
+		"client": [
+			"cc.schaap.NoahModClient"
+		],
+		"fabric-datagen": [
+			"cc.schaap.NoahModDataGenerator"
+		]
+	},
+	"mixins": [
+		"noah-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
